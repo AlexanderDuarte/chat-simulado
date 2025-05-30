@@ -37,6 +37,13 @@ chat-simulado/
 - main.j
 - README.md
 
+## 📁 Como rodar localmente
+
+```bash
+git clone https://github.com/AlexanderDuarte/chat-simulado.git
+cd chat-simulado
+```
+
 ## 🧪 Próximos passos
 
 - Implementar respostas mais avançadas
