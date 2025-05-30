@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to left, #cf66d3, #3bb2cf);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat {
+    width: 100%;
+    background-color: transparent;
+    max-width: 420px;
+    overflow: hidden;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15),
+        0px 4px 4px rgba(0, 0, 0, 0.15),
+        0px 8px 8px rgba(0, 0, 0, 0.15),
+        0px 16px 16px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-chat {
+    text-align: center;
+    padding: 8px 16px;
+    background: #97c5e0;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+
+}
+
+.mensagens {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 16px 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 8px;
+}
+
+
+
+
+.mensagem {
+    max-width: 70%;
+    text-wrap: wrap;
+    background-color: #3d69b9;
+    border-radius: 20px;
+    padding: 8px 16px;
+    box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.15),
+        0 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.user-msg {
+    align-self: flex-end;
+    background-color: rgb(170, 233, 106);
+}
+
+.bot-msg {
+    background-color: #7acfe4;
+    align-self: flex-start;
+}
+
+
+.chat-form {
+    background-color: aliceblue;
+    padding: 0;
+    min-height: 50px;
+    display: flex;
+    overflow: hidden;
+
+
+
+}
+
+.label-campo-mensagem {
+    display: none;
+}
+
+
+
+.campo-mensagem {
+    flex-grow: 1;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+
+}
+
+.btn-enviar {
+    flex-grow: 0.4;
+    border: none;
+    background-color: #497ee0;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+
+}
+
+.btn-enviar:disabled{
+    background-color: #fff;
+}
+
+.btn-enviar:hover {
+    background-color: #3d69b9;
+    cursor: pointer;
+}
